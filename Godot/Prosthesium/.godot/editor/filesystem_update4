@@ -1,0 +1,8 @@
+res://main.tscn
+res://Solid_wall.tscn
+res://Player.tscn
+res://Background_not_anim.tscn
+res://Background_camera.tscn
+res://Wall_side.tscn
+res://Player.gd
+res://main.gd

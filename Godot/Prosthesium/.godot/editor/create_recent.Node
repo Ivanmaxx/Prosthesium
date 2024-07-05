@@ -1,0 +1,10 @@
+TextureProgressBar
+Sprite2D
+CollisionShape2D
+StaticBody2D
+AnimatedSprite2D
+Area2D
+CollisionPolygon2D
+Camera2D
+CharacterBody2D
+Label
