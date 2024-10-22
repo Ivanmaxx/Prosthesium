@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://dcikh2cvywgeu"]
 
-[ext_resource type="Texture2D" uid="uid://bb04sh0tvsg4f" path="res://eshkere/terminator.png" id="1_lsx6d"]
+[ext_resource type="Texture2D" uid="uid://bb04sh0tvsg4f" path="res://assets/terminator.png" id="1_lsx6d"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_hk8ey"]
 animations = [{

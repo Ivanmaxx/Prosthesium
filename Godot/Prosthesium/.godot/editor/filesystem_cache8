@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1729588385
+::res://::1729595211
 Background_camera.gd::GDScript::-1::1720445809::0::1::::<>AnimatedSprite2D<>::
 Background_camera.tscn::PackedScene::1789519964730655433::1720449897::0::1::::<><>::uid://do0q3tmpik1t::::res://eshkere/wall_tile7.1.png<>uid://c6a3q2sjtwi0g::::res://eshkere/wall_tile7.2.png<>res://Background_camera.gd
 Background_not_anim.tscn::PackedScene::7567292486847781661::1720274601::0::1::::<><>::uid://brgfw7r146t17::::res://eshkere/wall_tile1.png<>uid://6df77bv31uco::::res://eshkere/wall_tile2.png<>uid://cy80k1amatt50::::res://eshkere/wall_tile3.png<>uid://0ws6c1or5d23::::res://eshkere/wall_tile4.png<>uid://25frxq5ikdyw::::res://eshkere/wall_tile5.png<>uid://bbnmg3u1cqt4d::::res://eshkere/wall_tile6.png<>uid://ujvsmjyl5xdm::::res://eshkere/wall_tile8.png
@@ -21,7 +21,7 @@ Player.tscn::PackedScene::3832251815469388250::1729530049::0::1::::<><>::res://P
 Solid_wall.tscn::PackedScene::2406107688471438006::1720449897::0::1::::<><>::uid://dtl387lp2ldf6::::res://eshkere/floor2.png
 Terminal.tscn::PackedScene::7316775853079995524::1720449897::0::1::::<><>::uid://bb04sh0tvsg4f::::res://eshkere/terminator.png
 tile_map.gd::GDScript::-1::1729509082::0::1::::<>TileMap<>::
-tile_map.tscn::PackedScene::8207249893025895332::1729530051::0::1::::<><>::uid://ngryic3tq3cp::::res://assets/tileset.png<>res://tile_map.gd
+tile_map.tscn::PackedScene::8207249893025895332::1729595211::0::1::::<><>::uid://ngryic3tq3cp::::res://assets/tileset.png<>res://tile_map.gd
 timer.tscn::PackedScene::2429507887443470755::1720272271::0::1::::<><>::
 Wall_corner.tscn::PackedScene::6118319587710898590::1720103661::0::1::::<><>::uid://bg7v1lleekfr2::::res://eshkere/wall_side-down-left.png
 Wall_side.tscn::PackedScene::6314361420361257142::1720449897::0::1::::<><>::uid://b65gfoyeeijqy::::res://eshkere/floor1.png
@@ -86,7 +86,7 @@ spriteshit_udar_hand.png::CompressedTexture2D::5049888999018645642::1720272937::
 stolechnica_bez_clucha.png::CompressedTexture2D::5605625562714057002::1720272054::1729498660::1::::<><>::
 stolechnica_cluch.png::CompressedTexture2D::312036625596068908::1720272054::1729498660::1::::<><>::
 terminator.png::CompressedTexture2D::2510012315438756343::1720276867::1729498660::1::::<><>::
-tileset.png::CompressedTexture2D::925916706324180595::1729503814::1729503819::1::::<><>::
+tileset.png::CompressedTexture2D::925916706324180595::1729596721::1729596725::1::::<><>::
 V1.png::CompressedTexture2D::9047055477209266965::1720272055::1729498660::1::::<><>::
 wall_side-down-left.png::CompressedTexture2D::2874935916078017857::1720272047::1729498660::1::::<><>::
 wall_side-down-right.png::CompressedTexture2D::1993820994676782063::1720272047::1729498660::1::::<><>::

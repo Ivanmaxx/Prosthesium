@@ -1,1 +1,10 @@
 res://tile_map.tscn
+res://main.tscn
+res://Platform.tscn
+res://Terminal.tscn
+res://Solid_wall.tscn
+res://Wall_side.tscn
+res://Closet.tscn
+res://Background_camera.tscn
+res://Player.tscn
+res://main.gd

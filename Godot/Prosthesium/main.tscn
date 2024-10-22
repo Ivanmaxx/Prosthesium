@@ -1,7 +1,70 @@
-[gd_scene load_steps=3 format=3 uid="uid://dhac2qrxs64ro"]
+[gd_scene load_steps=7 format=3 uid="uid://dhac2qrxs64ro"]
 
 [ext_resource type="PackedScene" uid="uid://buumvlnlhud6a" path="res://Player.tscn" id="1_lix84"]
 [ext_resource type="Script" path="res://main.gd" id="1_r5fy2"]
+[ext_resource type="PackedScene" uid="uid://do6wha46ye4hc" path="res://tile_map.tscn" id="3_bk1wh"]
+[ext_resource type="Texture2D" uid="uid://ngryic3tq3cp" path="res://assets/tileset.png" id="4_5furr"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_s8ke3"]
+texture = ExtResource("4_5furr")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+10:0/0 = 0
+11:0/0 = 0
+20:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+4:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+8:1/0/terrain_set = 1
+9:1/0 = 0
+10:1/0 = 0
+11:1/0 = 0
+18:1/0 = 0
+19:1/0 = 0
+20:1/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+8:2/0 = 0
+10:2/0 = 0
+11:2/0 = 0
+7:3/0 = 0
+8:3/0 = 0
+9:3/0 = 0
+10:3/0 = 0
+11:3/0 = 0
+7:4/0 = 0
+8:4/0 = 0
+9:4/0 = 0
+10:4/0 = 0
+11:4/0 = 0
+6:39/0 = 0
+18:0/size_in_atlas = Vector2i(2, 1)
+18:0/0 = 0
+16:0/size_in_atlas = Vector2i(2, 1)
+16:0/0 = 0
+14:0/size_in_atlas = Vector2i(2, 1)
+14:0/0 = 0
+12:0/size_in_atlas = Vector2i(2, 1)
+12:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_22xe0"]
+terrain_set_0/mode = 0
+terrain_set_1/mode = 0
+sources/0 = SubResource("TileSetAtlasSource_s8ke3")
 
 [node name="Node2D" type="Node2D"]
 position = Vector2(-122, 157)
@@ -11,3 +74,7 @@ metadata/_edit_horizontal_guides_ = [-8.0]
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_lix84")]
 z_index = 999
 position = Vector2(-66, -47)
+
+[node name="TileMap" parent="CharacterBody2D" instance=ExtResource("3_bk1wh")]
+tile_set = SubResource("TileSet_22xe0")
+layer_0/tile_data = PackedInt32Array(131071, 589824, 3, 65536, 589824, 3, 65537, 589824, 3, 65538, 589824, 3)
