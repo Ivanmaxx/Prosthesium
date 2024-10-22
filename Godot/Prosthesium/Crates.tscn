@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://3rtqdtmb25rp"]
+
+[ext_resource type="Texture2D" uid="uid://cg77u1utogv77" path="res://eshkere/yaschik.png" id="1_t8n81"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3g7iq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_t8n81")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D"]
+scale = Vector2(3, 3)
+sprite_frames = SubResource("SpriteFrames_3g7iq")

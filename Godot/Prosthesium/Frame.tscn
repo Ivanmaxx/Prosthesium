@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://cajdmpuhp6km4"]
+
+[ext_resource type="Texture2D" uid="uid://bjgwvirqmojkh" path="res://eshkere/ramlua_kartini.png" id="1_un5tt"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4yakd"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_un5tt")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_4yakd")

@@ -1,0 +1,50 @@
+[gd_scene load_steps=11 format=3 uid="uid://cd1a6sbb67rid"]
+
+[ext_resource type="Texture2D" uid="uid://bjnca2ucmntp7" path="res://eshkere/gigatile1.png" id="1_junh5"]
+[ext_resource type="Texture2D" uid="uid://ccsynylpf21yx" path="res://eshkere/gigatile2.png" id="2_2awy1"]
+[ext_resource type="Texture2D" uid="uid://dycyvyhhu6rqc" path="res://eshkere/gigatile3.png" id="3_4hf08"]
+[ext_resource type="Texture2D" uid="uid://du8f6y0k36y2l" path="res://eshkere/gigatile4.png" id="4_884on"]
+[ext_resource type="Texture2D" uid="uid://cq7jxjvgb3sos" path="res://eshkere/gigatile5.png" id="5_2dgky"]
+[ext_resource type="Texture2D" uid="uid://btpu8rtnwk413" path="res://eshkere/gigatile6.png" id="6_erv0x"]
+[ext_resource type="Texture2D" uid="uid://d0b4tdu878mkx" path="res://eshkere/gigatile7.png" id="7_8nt75"]
+[ext_resource type="Texture2D" uid="uid://bjayww7jl2f0e" path="res://eshkere/gigatile8.png" id="8_0s0w6"]
+[ext_resource type="Texture2D" uid="uid://b41tsw8x4f66m" path="res://eshkere/gigatile9.png" id="9_c5i6h"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8budw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_junh5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_2awy1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_4hf08")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_884on")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_2dgky")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_erv0x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_8nt75")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_0s0w6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_c5i6h")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D"]
+scale = Vector2(3, 3)
+sprite_frames = SubResource("SpriteFrames_8budw")
