@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://ixenrq8mi4cu"]
+
+[ext_resource type="Texture2D" uid="uid://bg5l7x8eltw03" path="res://eshkere/legs..png" id="1_luqu8"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xpy3f"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_luqu8")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D"]
+scale = Vector2(3, 3)
+sprite_frames = SubResource("SpriteFrames_xpy3f")

@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://0q4eras0vqar"]
+[gd_scene load_steps=5 format=3 uid="uid://0q4eras0vqar"]
 
 [ext_resource type="Texture2D" uid="uid://do0q3tmpik1t" path="res://eshkere/wall_tile7.1.png" id="1_0u2t0"]
 [ext_resource type="Texture2D" uid="uid://c6a3q2sjtwi0g" path="res://eshkere/wall_tile7.2.png" id="2_x6wxk"]
+[ext_resource type="Script" path="res://Background_camera.gd" id="3_e1hht"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_6xpdd"]
 animations = [{
@@ -14,9 +15,10 @@ animations = [{
 }],
 "loop": true,
 "name": &"default",
-"speed": 5.0
+"speed": 1.0
 }]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D"]
 scale = Vector2(3, 3)
 sprite_frames = SubResource("SpriteFrames_6xpdd")
+script = ExtResource("3_e1hht")

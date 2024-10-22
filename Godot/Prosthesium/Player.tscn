@@ -1,9 +1,9 @@
-[gd_scene load_steps=24 format=3 uid="uid://buumvlnlhud6a"]
+[gd_scene load_steps=21 format=3 uid="uid://buumvlnlhud6a"]
 
 [ext_resource type="Script" path="res://Player.gd" id="1_m82r6"]
-[ext_resource type="Texture2D" uid="uid://cjgabbdhy5v88" path="res://eshkere/char_idle_sheet.png" id="2_2h01k"]
-[ext_resource type="Texture2D" uid="uid://clo8ktbv7u6rd" path="res://eshkere/char_run_sheet.png" id="3_crxt5"]
-[ext_resource type="Texture2D" uid="uid://cyo0wsy585myc" path="res://eshkere/char_punch_sheet.png" id="3_e6hiw"]
+[ext_resource type="Texture2D" uid="uid://cjgabbdhy5v88" path="res://assets/char_idle_sheet.png" id="2_2h01k"]
+[ext_resource type="Texture2D" uid="uid://clo8ktbv7u6rd" path="res://assets/char_run_sheet.png" id="3_crxt5"]
+[ext_resource type="Texture2D" uid="uid://cyo0wsy585myc" path="res://assets/char_punch_sheet.png" id="3_e6hiw"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_a7n08"]
 atlas = ExtResource("2_2h01k")
@@ -121,17 +121,8 @@ animations = [{
 "speed": 7.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_jsqi4"]
-size = Vector2(14, 13)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_kqmks"]
-size = Vector2(7, 8)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_tykk0"]
-size = Vector2(3, 8)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ppwpt"]
-size = Vector2(3, 8)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_grjey"]
+size = Vector2(32, 69)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 script = ExtResource("1_m82r6")
@@ -139,27 +130,14 @@ script = ExtResource("1_m82r6")
 [node name="Camera2D" type="Camera2D" parent="."]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(3, 0)
 scale = Vector2(3, 3)
 sprite_frames = SubResource("SpriteFrames_0x8pi")
-animation = &"idle"
-frame_progress = 0.700729
+animation = &"run"
+frame_progress = 0.541504
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(4.76837e-07, -1.5)
-scale = Vector2(3, 3)
-shape = SubResource("RectangleShape2D_jsqi4")
+position = Vector2(1, -1.5)
+shape = SubResource("RectangleShape2D_grjey")
 
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
-position = Vector2(-1.5, -33)
-scale = Vector2(3, 3)
-shape = SubResource("RectangleShape2D_kqmks")
-
-[node name="CollisionShape2D5" type="CollisionShape2D" parent="."]
-position = Vector2(-13.5, 30)
-scale = Vector2(3, 3)
-shape = SubResource("RectangleShape2D_tykk0")
-
-[node name="CollisionShape2D6" type="CollisionShape2D" parent="."]
-position = Vector2(13.5, 30)
-scale = Vector2(3, 3)
-shape = SubResource("RectangleShape2D_ppwpt")
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]

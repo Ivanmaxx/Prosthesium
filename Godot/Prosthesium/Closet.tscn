@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=3 uid="uid://ch1xv6jl4lsmf"]
+
+[ext_resource type="Script" path="res://Closet.gd" id="1_pbn3h"]
+[ext_resource type="Texture2D" uid="uid://cl4n3mesv4dt7" path="res://eshkere/stolechnica_bez_clucha.png" id="2_ga54p"]
+[ext_resource type="Texture2D" uid="uid://epfgyp3a3qns" path="res://eshkere/stolechnica_cluch.png" id="3_qfg5r"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7d8s3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_ga54p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_qfg5r")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k73fs"]
+size = Vector2(60, 146)
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_pbn3h")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(3, 3)
+sprite_frames = SubResource("SpriteFrames_7d8s3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-12, 22)
+shape = SubResource("RectangleShape2D_k73fs")

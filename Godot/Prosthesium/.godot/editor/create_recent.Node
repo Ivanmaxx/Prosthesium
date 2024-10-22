@@ -1,9 +1,11 @@
-TextureProgressBar
-Sprite2D
+TileMap
 CollisionShape2D
-StaticBody2D
 AnimatedSprite2D
 Area2D
+StaticBody2D
+Timer
+TextureProgressBar
+Sprite2D
 CollisionPolygon2D
 Camera2D
 CharacterBody2D

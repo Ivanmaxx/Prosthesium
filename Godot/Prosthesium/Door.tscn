@@ -1,0 +1,70 @@
+[gd_scene load_steps=11 format=3 uid="uid://bpgfyafg6ws4g"]
+
+[ext_resource type="Texture2D" uid="uid://budnb3355d5ny" path="res://eshkere/door_open_spriteshit.png" id="1_dky03"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5stii"]
+atlas = ExtResource("1_dky03")
+region = Rect2(0, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ennx0"]
+atlas = ExtResource("1_dky03")
+region = Rect2(16, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xdlkb"]
+atlas = ExtResource("1_dky03")
+region = Rect2(32, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ywrpc"]
+atlas = ExtResource("1_dky03")
+region = Rect2(48, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yydqf"]
+atlas = ExtResource("1_dky03")
+region = Rect2(64, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bclq0"]
+atlas = ExtResource("1_dky03")
+region = Rect2(80, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pji37"]
+atlas = ExtResource("1_dky03")
+region = Rect2(96, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_igft4"]
+atlas = ExtResource("1_dky03")
+region = Rect2(112, 0, 16, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3imf7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5stii")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ennx0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xdlkb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ywrpc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yydqf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bclq0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pji37")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_igft4")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_3imf7")

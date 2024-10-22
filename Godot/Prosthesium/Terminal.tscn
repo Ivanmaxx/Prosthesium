@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://dcikh2cvywgeu"]
+
+[ext_resource type="Texture2D" uid="uid://bb04sh0tvsg4f" path="res://eshkere/terminator.png" id="1_lsx6d"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hk8ey"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_lsx6d")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_hk8ey")

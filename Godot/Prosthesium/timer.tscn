@@ -1,0 +1,4 @@
+[gd_scene format=3 uid="uid://bau4v01vddebj"]
+
+[node name="Timer" type="Timer"]
+wait_time = 0.857
