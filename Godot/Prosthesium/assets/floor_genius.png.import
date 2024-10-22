@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ceefgmlgvtgw8"
-path="res://.godot/imported/wall_side-down.png-b7d3cee4a36fb3ab4914499cf4445fcd.ctex"
+uid="uid://pp6ggn0fnaxj"
+path="res://.godot/imported/floor_genius.png-c399fdd9a2a75d790a8dfae2272ed171.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://eshkere/wall_side-down.png"
-dest_files=["res://.godot/imported/wall_side-down.png-b7d3cee4a36fb3ab4914499cf4445fcd.ctex"]
+source_file="res://assets/floor_genius.png"
+dest_files=["res://.godot/imported/floor_genius.png-c399fdd9a2a75d790a8dfae2272ed171.ctex"]
 
 [params]
 

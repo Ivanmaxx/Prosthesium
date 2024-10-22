@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://bw1j5dhys0746"]
 
-[ext_resource type="Texture2D" uid="uid://s1fvjfm4mnfn" path="res://eshkere/plat_main.png" id="1_5t6qn"]
-[ext_resource type="Texture2D" uid="uid://ckmbycjb8fyhc" path="res://eshkere/plat_toleft.png" id="2_7jkkp"]
-[ext_resource type="Texture2D" uid="uid://c71dxoj67h0fr" path="res://eshkere/plat_toright.png" id="3_r2xoh"]
+[ext_resource type="Texture2D" uid="uid://s1fvjfm4mnfn" path="res://assets/plat_main.png" id="1_5t6qn"]
+[ext_resource type="Texture2D" uid="uid://ckmbycjb8fyhc" path="res://assets/plat_toleft.png" id="2_7jkkp"]
+[ext_resource type="Texture2D" uid="uid://c71dxoj67h0fr" path="res://assets/plat_toright.png" id="3_r2xoh"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_uelku"]
 animations = [{
