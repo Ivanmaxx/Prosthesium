@@ -77,4 +77,4 @@ position = Vector2(-66, -47)
 
 [node name="TileMap" parent="CharacterBody2D" instance=ExtResource("3_bk1wh")]
 tile_set = SubResource("TileSet_22xe0")
-layer_0/tile_data = PackedInt32Array(131071, 589824, 3, 65536, 589824, 3, 65537, 589824, 3, 65538, 589824, 3)
+layer_0/tile_data = PackedInt32Array(131071, 589824, 3, 65536, 589824, 3, 65537, 589824, 3, 65538, 589824, 3, 65539, 655360, 3, 3, 524288, 1, 4, 655360, 1, 65540, 524288, 3)
