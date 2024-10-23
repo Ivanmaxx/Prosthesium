@@ -1,1 +1,7 @@
+res://Player.tscn
+res://Player.gd
 res://main.tscn
+res://Background_camera.gd
+res://Closet.gd
+res://main.gd
+res://tile_map.gd

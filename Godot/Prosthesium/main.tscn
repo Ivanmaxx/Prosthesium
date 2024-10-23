@@ -75,6 +75,7 @@ metadata/_edit_horizontal_guides_ = [-8.0]
 z_index = 999
 position = Vector2(-66, -47)
 
-[node name="TileMap" parent="CharacterBody2D" instance=ExtResource("3_bk1wh")]
+[node name="TileMap" parent="." instance=ExtResource("3_bk1wh")]
+position = Vector2(-66, -47)
 tile_set = SubResource("TileSet_22xe0")
-layer_0/tile_data = PackedInt32Array(131071, 589824, 3, 65536, 589824, 3, 65537, 589824, 3, 65538, 589824, 3, 65539, 655360, 3, 3, 524288, 1, 4, 655360, 1, 65540, 524288, 3)
+layer_0/tile_data = PackedInt32Array(196604, 589824, 1, 196605, 589824, 1, 196606, 589824, 1, 196607, 589824, 1, 131072, 589824, 1, 131073, 589824, 1, 131074, 589824, 1, 131075, 589824, 1)
