@@ -2,8 +2,8 @@ extends CharacterBody2D
 
 
 const SPEED = 300.0
+const JUMP_VELOCITY = 500
 
-var JUMP_CHARGE = -400.0
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var can_attack = true
 var hitbox = null
@@ -13,15 +13,11 @@ var if_has_key = false
 func _physics_process(delta):
 	if not is_on_floor():
 		velocity.y += gravity * delta
-	
-	if Input.is_action_pressed("ui_accept") and is_on_floor():
-		if JUMP_CHARGE > -600:
-			JUMP_CHARGE = JUMP_CHARGE - 1
-	
-	if not Input.is_action_pressed("ui_accept") and is_on_floor() and JUMP_CHARGE < -400:
-		velocity.y = JUMP_CHARGE
-		JUMP_CHARGE = -400
-	
+	if is_on_floor():
+		if Input.is_action_just_pressed("ui_accept"):
+			jump()
+	if Input.is_action_just_released("ui_accept"):
+		jump_cut()
 	if Input.is_action_pressed("ui_left"):
 		velocity.x = -SPEED
 		_animated_sprite.play("run")
@@ -47,3 +43,10 @@ func _physics_process(delta):
 	
 	if velocity.length() > 0:
 		move_and_slide()
+
+func jump():
+	velocity.y = -JUMP_VELOCITY
+	
+func jump_cut():
+	if velocity.y < -150:
+		velocity.y = -150
