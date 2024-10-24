@@ -124,7 +124,7 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_grjey"]
 size = Vector2(32, 69)
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[node name="CharacterBody2D" type="CharacterBody2D" groups=["player"]]
 script = ExtResource("1_m82r6")
 
 [node name="Camera2D" type="Camera2D" parent="."]

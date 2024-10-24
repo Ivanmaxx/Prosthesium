@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://dhac2qrxs64ro"]
+[gd_scene load_steps=8 format=3 uid="uid://dhac2qrxs64ro"]
 
 [ext_resource type="PackedScene" uid="uid://buumvlnlhud6a" path="res://Player.tscn" id="1_lix84"]
 [ext_resource type="Script" path="res://main.gd" id="1_r5fy2"]
 [ext_resource type="PackedScene" uid="uid://do6wha46ye4hc" path="res://tile_map.tscn" id="3_bk1wh"]
 [ext_resource type="Texture2D" uid="uid://ngryic3tq3cp" path="res://assets/tileset.png" id="4_5furr"]
+[ext_resource type="PackedScene" uid="uid://ixenrq8mi4cu" path="res://Leg_prosthesis.tscn" id="5_bbf4b"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_s8ke3"]
 texture = ExtResource("4_5furr")
@@ -77,4 +78,6 @@ position = Vector2(-66, -47)
 
 [node name="TileMap" parent="CharacterBody2D" instance=ExtResource("3_bk1wh")]
 tile_set = SubResource("TileSet_22xe0")
-layer_0/tile_data = PackedInt32Array(131071, 589824, 3, 65536, 589824, 3, 65537, 589824, 3, 65538, 589824, 3, 65539, 655360, 3, 3, 524288, 1, 4, 655360, 1, 65540, 524288, 3)
+
+[node name="RigidBody2D" parent="." instance=ExtResource("5_bbf4b")]
+position = Vector2(-78, 136)

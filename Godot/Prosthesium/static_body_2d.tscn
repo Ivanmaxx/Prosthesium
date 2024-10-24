@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://btplqvh6mc0yj"]
+
+[ext_resource type="Texture2D" uid="uid://bg5l7x8eltw03" path="res://assets/legs..png" id="1_k3xw0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4fl3i"]
+size = Vector2(10, 16)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 8)
+shape = SubResource("RectangleShape2D_4fl3i")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_k3xw0")
