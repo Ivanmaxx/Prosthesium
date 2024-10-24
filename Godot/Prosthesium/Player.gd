@@ -25,10 +25,10 @@ func _physics_process(delta):
 		velocity.x = SPEED
 		_animated_sprite.flip_h = false
 		_animated_sprite.play("run")
-	'''if Input.is_action_pressed("hand_action_1") and can_attack:
+	if Input.is_action_pressed("hand_action_1") and can_attack:
 		_animated_sprite.play("punch")
 		can_attack = false
-		if hitbox.is_colliding():
+		'''if hitbox.is_colliding():
 			for i in hitbox.get_colliders():
 				if i.is_in_group("Enemies"):
 					i.take_damage(20)'''
