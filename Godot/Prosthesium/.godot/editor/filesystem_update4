@@ -1,11 +1,7 @@
-res://Solid_wall.tscn
-res://Player.gd
-res://Wall_side.tscn
-res://Background_camera.tscn
 res://Player.tscn
+res://Player.gd
+res://tile_map.tscn
 res://main.tscn
 res://Leg_prosthesis.tscn
-res://player_states.gd
-res://skibidi.gd
 res://Leg_prosthesis.gd
-res://tile_map.tscn
+res://player_states.gd
