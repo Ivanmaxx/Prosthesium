@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://buumvlnlhud6a"]
+[gd_scene load_steps=21 format=3 uid="uid://rojnvumueja4"]
 
 [ext_resource type="Script" path="res://Player.gd" id="1_m82r6"]
 [ext_resource type="Texture2D" uid="uid://cjgabbdhy5v88" path="res://assets/char_idle_sheet.png" id="2_2h01k"]
@@ -124,7 +124,7 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_grjey"]
 size = Vector2(42, 84)
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[node name="CharacterBody2D" type="CharacterBody2D" groups=["player"]]
 collision_layer = 3
 collision_mask = 3
 script = ExtResource("1_m82r6")

@@ -1,12 +1,12 @@
-Area2D
-StaticBody2D
 CollisionShape2D
+Area2D
+Sprite2D
+StaticBody2D
 AnimatedSprite2D
 RigidBody2D
 TileMap
 Timer
 TextureProgressBar
-Sprite2D
 CollisionPolygon2D
 Camera2D
 CharacterBody2D
