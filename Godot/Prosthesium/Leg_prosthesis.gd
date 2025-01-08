@@ -14,4 +14,4 @@ func _process(delta):
 func _on_body_entered(body):
 	if body.is_in_group("player"):
 		player_states.prostheses["leg"] = "basic_prosth"
-		$Sprite2D.visible = not $Sprite2D.visible
+		$Sprite2D.visible = false
